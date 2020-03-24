@@ -106,3 +106,9 @@
   when: es_templates | bool
   tags:
       - templates
+
+#include custom keystore task
+- name: include elasticsearch.keystore.yml
+  include: elasticsearch.keystore.yml
+  when: elasticsearch_key_bucket is defined
+        
