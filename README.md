@@ -4,7 +4,7 @@
 
 ** MTN configuration **
 Once a new cluster is built, following commands need to run one time on first node and then keystore should be moved to AWS S3 bucket for downloading in other nodes
-
+manny test
 Enter AWS keys
 /usr/share/elasticsearch/bin/elasticsearch-keystore add discovery.ec2.secret_key
 /usr/share/elasticsearch/bin/elasticsearch-keystore add discovery.ec2.access_key
