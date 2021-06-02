@@ -3,7 +3,7 @@
 [![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-elastic.elasticsearch-blue.svg)](https://galaxy.ansible.com/elastic/elasticsearch/)
 
 ** MTN configuration **
-Once a new cluster is built, following commands need to run one time on first node and then keystore should be moved to AWS S3 bucket for downloading in other nodes
+Once a new cluster is built, following commands need to run one time on first node and then keystore should be moved to AWS S3 bucket for downloading in other nodes. For adding new nodes to elk2 cluster or another cluster we don't need following steps since ansible will download these secrets from s3
 
 Enter AWS keys
 /usr/share/elasticsearch/bin/elasticsearch-keystore add discovery.ec2.secret_key
